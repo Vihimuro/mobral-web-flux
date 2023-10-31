@@ -1,6 +1,5 @@
 package mobral.webflux.service;
 
-import jakarta.annotation.Generated;
 import jakarta.annotation.PostConstruct;
 import mobral.webflux.domain.Greeting;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
