@@ -16,7 +16,6 @@ public class GreetingRouter {
     @Bean
     public RouterFunction<ServerResponse> route(GreetingHandler greetingHandler) {
         return RouterFunctions
-                .route(GET("/hello").and(accept(MediaType.APPLICATION_JSON)), greetingHandler::hello)
-                .andRoute(POST("/kafka/send").and(accept(MediaType.APPLICATION_JSON)), greetingHandler::send);
+                .route(POST("/kafka/send").and(accept(MediaType.APPLICATION_JSON)), greetingHandler::send);
     }
 }
